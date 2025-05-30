@@ -141,6 +141,10 @@ class _TemperatureConverterScreenState
                     style: const TextStyle(fontWeight: FontWeight.bold),
                     decoration: const InputDecoration(
                       labelText: 'Input',
+                      labelStyle: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
                       border: OutlineInputBorder(),
                     ),
                   ),
@@ -177,7 +181,6 @@ class _TemperatureConverterScreenState
                     horizontal: 40,
                     vertical: 15,
                   ),
-                  // Add background color that changes when pressed
                   backgroundColor: const Color.fromARGB(255, 42, 42, 42),
                   foregroundColor: Colors.white,
                 ),
@@ -198,7 +201,7 @@ class _TemperatureConverterScreenState
               'Conversion History:',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 15),
             Container(
               height: 460,
               decoration: BoxDecoration(
